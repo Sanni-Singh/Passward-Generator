@@ -12,6 +12,8 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
+    @media screen and (max-width:400px) {
+    }
 }
 .container{
     /* border: 0.5px solid #fff; */
@@ -23,9 +25,16 @@ body{
     gap: 1rem;
     h1{
         font-size: 1.4rem;
+        @media screen and (max-width:400px) {
+            font-size: 1rem;
+        }
     }
 }
-
+@media screen and (max-width:400px) {
+    .container{
+        width: 90%;
+    }
+}
 .input-box{
     position: relative;
     span{
@@ -46,6 +55,10 @@ body{
     font-size: 20px;
     border-radius: 5px;
 
+    @media screen and (max-width:400px) {
+        width: 100%;
+    }
+
 }
 .row{
     display: flex;
@@ -53,6 +66,10 @@ body{
     p , label{
         flex-basis: 100%;
         font-size: 18px;
+
+        @media screen and (max-width:400px) {
+            font-size:1rem;
+        }
     }
 }
 .row input[type="cheakbox"]{
@@ -70,6 +87,10 @@ body{
     cursor: pointer;
     border-radius: 5px;
     color: #fff;
+
+    @media screen and (max-width:400px) {
+        font-size: 13px;
+    }
 }
 
 .genbtn:hover{
